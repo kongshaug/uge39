@@ -56,3 +56,9 @@ Dette betyder at alle må få adgang.
 3. jeg er ikke helt stærk på det endnu og ved ikke hvordan man gør. Du må super gerne vise et forslag hvis du har tid :) 
 
 
+Extra exercise with both AJAX and JPA
+
+opgave 1 til 4 er løst
+og ligger i fredagsmappen og åben mappen: FredagsopgavenUge39
+
+
