@@ -43,4 +43,16 @@ Når jeg med AJAX sender et database kald sker det nogle gange fra en anden orig
 I dette tilfælde kan det være kaldet bliver nægtet da de 2 applikationer ikke har samme origin
 ...Det var ikke den bedste forklaring jeg mangler lidt forståelse på emnet men der er lidt mange opgaver så det når jeg ikke lige i denne omgang desvære.
 
+SVG LANDEOPGAVE:
+The task is to create a web-page with a map of Europe which, when a country is selected with a mouse click, should highlight the country and print details about the country as sketched below.
+
+1. Opgaven er løst, når man trykker på et land kommer der både info og det skifter farve.
+
+2. Hvis man går ind og "undersøger" siden: http://restcountries.eu/rest/v1/alpha?codes=de 
+kan man blandt headers finde: Access-Control-Allow-Origin:
+den er sat til: *
+Dette betyder at alle må få adgang.
+
+3. jeg er ikke helt stærk på det endnu og ved ikke hvordan man gør. Du må super gerne vise et forslag hvis du har tid :) 
+
 
