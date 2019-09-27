@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "json-server with json-error responses",
+  "main": "server.js",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "cors": "^2.8.4",
+    "ejs": "^2.6.1",
+    "email-validator": "^2.0.4",
+    "json-server": "^0.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js db=users.json",
+    "autofail": "node server.js db=users.json fail=5 cors=true",
+    "autofailnocors": "node server.js db=users.json fail=5 cors=false",
+    "nocors": "node server.js db=users.json cors=false"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,93 @@
+<html>
+
+<head>
+  <title>JSON Server</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="main.css" rel="stylesheet">
+</head>
+<style>
+
+  h4  {margin-bottom: 10px;margin-top: 10px;}
+  p {margin-bottom: 4px;margin-top: 4px;}
+ 
+</style>
+
+<body>
+  <header>
+    <div class="container">
+      <h3>JSON Server</h3>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h4>Congrats!</h4>
+      <p>
+        You're successfully running <b>a modified</b> JSON Server
+        <br> ✧*｡٩(ˊᗜˋ*)و✧*｡
+      </p>
+
+      <h4>Important!</h4>
+      <p>
+        This is a <em>specialized version of <a href="https://github.com/typicode/json-server">json-server</a></em>, created solely as a server
+        meant for exercises at cphbusiness.dk - computer science 3. semester
+      </p>
+      <h4>What's different</h4>
+      <ul style="margin-top: 0px;">
+        <li>- This version provides json formatted error responses for invalid requests</li>
+        <li>- This version generates, at random, errors that will lead to a status-code 500 responses</li>
+        <li>- It's hard-coded to provide rules for new Users. Rules used before storing new Users:
+          <ul>
+            <% for(r in rules) {%>
+            <li><b style="margin-right:5px;">
+                <%= r %></b>
+              <%= JSON.stringify(rules[r]) %>
+            </li>
+            <% } %>
+          </ul>
+        </li>
+      </ul>
+      <h5>Error Format</h5>
+      All errors are reported in json, in a format as sketched below:
+      <p>
+        <code>
+          {
+            status : 404, "msg": "No content found for this request"
+          }
+        </code>
+      </p>
+      <h4>Resources</h4>
+      <a href="<%= url %>"> <%= resourse %> </a>
+
+      <p>
+        To access and modify resources, you can use any HTTP method
+        <br>
+        <code>GET</code>
+        <code>POST</code>
+        <code>PUT</code>
+        <code>PATCH</code>
+        <code>DELETE</code>
+        <code>OPTIONS</code>
+      </p>
+
+      <div id="custom-routes"></div>
+
+      <h4>Documentation</h4>
+      <p>
+        View
+        <a href="https://github.com/typicode/json-server">README</a>
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>
+        To replace this page, create a
+        <code>./public/index.html</code> file.
+      </p>
+    </div>
+  </footer>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
